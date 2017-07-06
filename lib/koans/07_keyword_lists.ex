@@ -23,7 +23,7 @@ defmodule KeywordLists do
   end
 
   koan "Keyword lists are just special syntax for lists of two-element tuples" do
-    assert [foo: "bar"] == [{___, ___}]
+    assert [foo: "bar"] == [{:foo, ___}]
   end
 
   koan "But unlike maps, the keys in keyword lists must be atoms" do
